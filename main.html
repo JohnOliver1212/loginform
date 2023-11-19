@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Redirect Button</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to my login</title>
 </head>
 <body>
-
-<pre>Click the button</pre> <br>
-<button onclick="window.location.href = 'https:loginform.42web.io/'">Click to Redirect</button>
-
+  <pre>Click the button</pre> <br>
+  <button id="redirectButton">Click to Redirect</button>
+  <script>
+        document.getElementById("redirectButton").onclick = function() {
+        window.location.href = 'https://loginform.42web.io/';
+        };
+  </script>
 </body>
 </html>
